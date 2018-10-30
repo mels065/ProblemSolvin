@@ -1,5 +1,10 @@
 import Data.Char
 
+-- Determines whether a string is isolated to one side of the keyboard when typed
+-- For every character that is on the left side of the keyboard, a counter increments by one
+-- If the character is on the right side, it decrements by one.
+-- It is considered isolated if the absolute value of the counter is equal to the length of the string.
+
 -- Output:
 --  [("starwars",True),("lampung",False),("secret",True),("ilmu",True),("pony",True)]
 
