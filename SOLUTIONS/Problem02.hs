@@ -21,6 +21,6 @@ import Data.Char
 
 main = putStrLn $ show ([(x, isolated x) | x <- ["starwars", "lampung", "secret", "ilmu", "pony"]])
   where isolated :: String -> Bool
-        isolated  x = abs ((sum . (map (\y -> if y `elem` leftHand then 1 else if y `elem` rightHand then -1 else 0))) x) == length x
+        isolated  x = abs ((sum . (map (\y -> if toLower y `elem` leftHand then 1 else if toLower y `elem` rightHand then -1 else 0))) x) == length x
           where leftHand    = ['1', '2', '3', '4', '5','q', 'w', 'e', 'r', 't','a', 's', 'd', 'f', 'g','z', 'x', 'c', 'v', 'b']
                 rightHand   = [x | x <- (['a' .. 'z'] ++ ['0' .. '9']), not (x `elem` leftHand) ]
