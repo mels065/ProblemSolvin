@@ -19,7 +19,7 @@ import Data.Char
 -- | #05  | pony     | true   |
 -- #--------------------------#
 
-main = putStrLn $ show $ ([(x, isolated x) | x <- ["starwars", "lampung", "secret", "ilmu", "pony"]])
+main = putStrLn $ show ([(x, isolated x) | x <- ["starwars", "lampung", "secret", "ilmu", "pony"]])
   where leftHand  = [
           '1', '2', '3', '4', '5',
           'q', 'w', 'e', 'r', 't',
