@@ -1,0 +1,65 @@
+# Problem05
+
+How many round did i need to win (find the minimum solution)?
+Once upon a time, there is a game with condition:
+1) bet 1 point.
+2) all in bet point is double.
+
+In this case, will give input N as number of point to achieve and K is number of all in that can be use.
+
+TestCase:
+Case#1:
+Input: N = 8, K = 0
+Process:
+Round 1 - 2 => 2 
+Round 2 - 3 => 3
+Round 3 - 4 => 4
+Round 4 - 5 => 5
+Round 5 - 6 => 6
+Round 6 - 7 => 7
+Round 7 - 8 => 8
+Output: 7
+
+Case#2:
+Input: N = 10, K = 0
+Process:
+Round 1 - 2 => 2 
+Round 2 - 3 => 3
+Round 3 - 4 => 4
+Round 4 - 5 => 5
+Round 5 - 6 => 6
+Round 6 - 7 => 7
+Round 7 - 8 => 8
+Round 8 - 9 => 9
+Round 9 - 10 => 10 
+Output: 9
+
+Case#3:
+Input: N = 10, K = 2
+Process:
+Round 1 - 2 => 2
+Round 2 - 3 => 4 (all in)
+Round 3 - 4 => 5
+Round 4 - 5 => 10 (all in)
+Output: 4
+
+Case#4:
+Input: N = 18, K = 2
+Process:
+Round 1 - 2 => 2
+Round 2 - 3 => 3
+Round 3 - 4 => 4
+Round 4 - 5 => 8 (all in)
+Round 5 - 6 => 9 
+Round 6 - 7 => 18 (all in)
+Output: 6
+
+Case#5:
+Input: N = 18, K = 5
+Process:
+Round 1 - 2 => 2
+Round 3 - 4 => 4 (all in)
+Round 4 - 5 => 8 (all in)
+Round 5 - 6 => 9 
+Round 6 - 7 => 18 (all in)
+Output: 5
